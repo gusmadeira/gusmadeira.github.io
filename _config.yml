@@ -1,6 +1,6 @@
 title: Gustavo Madeira
 description: Personal website
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes
 plugins:
   - jekyll-readme-index
