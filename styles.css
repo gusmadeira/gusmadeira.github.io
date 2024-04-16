@@ -75,3 +75,20 @@ main h1, main h2, main h3 {
 main p {
     margin-bottom: 10px; /* Adiciona espaço abaixo de cada parágrafo */
 }
+
+.hero-banner {
+  background-image: url('PIA01299.jpg'); /* Substitua pelo caminho correto da sua imagem */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Ajuste a altura conforme necessário */
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: flex-end; /* Alinha horizontalmente à direita */
+  padding-right: 50px; /* Espaço à direita do texto */
+  color: black; /* Cor do texto */
+}
+
+.hero-banner h2 {
+  font-size: 24px; /* Tamanho do texto */
+  margin: 0; /* Remove margens padrão do h2 */
+}
