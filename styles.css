@@ -69,7 +69,7 @@ main {
 
 main h1, main h2, main h3 {
     font-weight: 700; /* Aplica o peso negrito para cabeçalhos */
-    color: white; /* Uma cor de destaque para títulos */
+    color: darkslateblue; /* Uma cor de destaque para títulos */
 }
 
 main p {
@@ -77,10 +77,10 @@ main p {
 }
 
 .hero-banner {
-  background-image: url('PIA01299.jpg'); /* Substitua pelo caminho correto da sua imagem */
+  background-image: url('PIA00024.tif'); /* Substitua pelo caminho correto da sua imagem */
   background-size: cover;
   background-position: center;
-  height: 300px; /* Ajuste a altura conforme necessário */
+  height: 330px; /* Ajuste a altura conforme necessário */
   display: flex;
   align-items: center; /* Alinha verticalmente */
   justify-content: flex-end; /* Alinha horizontalmente à direita */
@@ -91,4 +91,26 @@ main p {
 .hero-banner h2 {
   font-size: 24px; /* Tamanho do texto */
   margin: 0; /* Remove margens padrão do h2 */
+}
+
+.about-me {
+    display: flex; /* Ativa o flexbox */
+    justify-content: space-between; /* Espaçamento entre as colunas */
+    align-items: flex-start; /* Alinha itens ao topo */
+    margin: 20px; /* Margem externa para separação da seção */
+}
+
+.column {
+    flex: 1; /* As colunas ocupam espaços iguais */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding no cálculo de width/height */
+}
+
+.photo img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.bio {
+    padding-left: 20px; /* Espaçamento adicional à esquerda para a coluna do texto */
 }
