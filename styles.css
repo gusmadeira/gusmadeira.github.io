@@ -5,8 +5,8 @@
     font-family: "Sarala", sans-serif;
     font-weight:  400;
     color: white;
-    font-size: 25px; /* Define o tamanho padrão do texto */
-    padding: 13px 20px;
+    font-size: 20px; /* Define o tamanho padrão do texto */
+    padding: 12px 20px;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@
 
 .topnav ul li {
     display: inline;
-    margin-right: 35px;
+    margin-right: 30px;
 }
 
 .topnav ul li a {
@@ -51,7 +51,7 @@ footer {
     padding: 10px ; /* Adiciona um espaçamento vertical */
     font-family: "Sarala", sans-serif;
     font-weight:  400;
-    font-size: 20px; /* Define o tamanho padrão do texto */
+    font-size: 15px; /* Define o tamanho padrão do texto */
     color: white; /* Define a cor do texto para branco */
 }
 
@@ -78,7 +78,7 @@ main p {
 }
 
 .hero-banner {
-  background-image: url('PIA00024.tif'); /* Substitua pelo caminho correto da sua imagem */
+  background-image: url('PIA00024.jpg'); /* Substitua pelo caminho correto da sua imagem */
   background-size: cover;
   background-position: center;
   height: 750px; /* Ajuste a altura conforme necessário */
