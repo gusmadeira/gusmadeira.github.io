@@ -5,7 +5,7 @@
     font-family: "Sarala", sans-serif;
     font-weight:  400;
     color: white;
-    font-size: 30px; /* Define o tamanho padrão do texto */
+    font-size: 25px; /* Define o tamanho padrão do texto */
     padding: 13px 20px;
     text-align: center;
 }
@@ -51,9 +51,8 @@ footer {
     padding: 10px ; /* Adiciona um espaçamento vertical */
     font-family: "Sarala", sans-serif;
     font-weight:  400;
-    font-size: 25px; /* Define o tamanho padrão do texto */
+    font-size: 20px; /* Define o tamanho padrão do texto */
     color: white; /* Define a cor do texto para branco */
-    font-size: 1.0em; /* Aumenta o tamanho da fonte do título */
 }
 
 footer p {
@@ -197,12 +196,16 @@ font-weight:  700;
 
 .title {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o título */
+    top: 0; /* Inicia no topo do quadrado */
+    left: 0; /* Inicia na esquerda do quadrado */
+    width: 100%; /* Ocupa toda a largura do quadrado */
+    height: 100%; /* Ocupa toda a altura do quadrado */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente que cobre toda a imagem */
     color: white;
     text-align: center;
-    padding: 10px;
     font-size: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    padding: 0; /* Removendo qualquer padding interno para não afetar o alinhamento */
 }
