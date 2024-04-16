@@ -5,7 +5,7 @@
     font-family: "Sarala", sans-serif;
     font-weight:  400;
     color: white;
-    font-size: 20px; /* Define o tamanho padrão do texto */
+    font-size: 30px; /* Define o tamanho padrão do texto */
     padding: 13px 20px;
     text-align: center;
 }
@@ -18,7 +18,7 @@
 
 .topnav ul li {
     display: inline;
-    margin-right: 27px;
+    margin-right: 35px;
 }
 
 .topnav ul li a {
