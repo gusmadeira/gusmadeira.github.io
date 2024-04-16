@@ -5,20 +5,20 @@
     font-family: "Sarala", sans-serif;
     font-weight:  400;
     color: white;
-    font-size: 15px; /* Define o tamanho padrão do texto */
+    font-size: 20px; /* Define o tamanho padrão do texto */
     padding: 13px 20px;
     text-align: center;
 }
 
 .topnav ul {
     list-style-type: upper-alpha;
-    padding: 0;
+    padding: 2;
     margin: 0;
 }
 
 .topnav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 27px;
 }
 
 .topnav ul li a {
