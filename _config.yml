@@ -4,3 +4,4 @@ markdown: kramdown
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-readme-index
+  - jekyll-include-cache
