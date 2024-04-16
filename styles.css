@@ -80,19 +80,34 @@ main p {
   background-image: url('PIA00024.tif'); /* Substitua pelo caminho correto da sua imagem */
   background-size: cover;
   background-position: center;
-  height: 330px; /* Ajuste a altura conforme necessário */
+  height: 550px; /* Ajuste a altura conforme necessário */
   display: flex;
   align-items: center; /* Alinha verticalmente */
-  justify-content: flex-end; /* Alinha horizontalmente à direita */
+  justify-content: flex; /* Alinha horizontalmente à direita */
   padding-right: 50px; /* Espaço à direita do texto */
   color: black; /* Cor do texto */
 }
 
-.hero-banner h2 {
-  font-size: 24px; /* Tamanho do texto */
-  margin: 0; /* Remove margens padrão do h2 */
+.text-box {
+  background-color: rgba(0, 0, 0, 0.1); /* Fundo preto com 50% de opacidade */
+  padding: 27px;
+  width: 287px; /* Ajuste conforme necessário */
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
+.hero-banner h2 {
+font-family: "Sarala", sans-serif;
+font-weight:  700;
+  font-size: 34px; /* Tamanho do título */
+  margin: 0 0 5px 0; /* Adiciona margem inferior de 20px */
+  padding: 5px 0; /* Espaçamento vertical */
+}
+
+.hero-banner h3 {
+  font-size: 24px; /* Tamanho do subtítulo */
+  margin: 3; /* Remove margens padrão */
+  padding: 1px 0; /* Espaçamento vertical */
+}
 .about-me {
     display: flex; /* Ativa o flexbox */
     justify-content: space-between; /* Espaçamento entre as colunas */
