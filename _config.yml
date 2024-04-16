@@ -1,0 +1,6 @@
+title: Gustavo Madeira
+description: Personal website
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-readme-index
