@@ -5,6 +5,7 @@
     font-family: "Sarala", sans-serif;
     font-weight:  400;
     color: white;
+    font-size: 15px; /* Define o tamanho padrão do texto */
     padding: 13px 20px;
     text-align: center;
 }
@@ -80,7 +81,7 @@ main p {
   background-image: url('PIA00024.tif'); /* Substitua pelo caminho correto da sua imagem */
   background-size: cover;
   background-position: center;
-  height: 550px; /* Ajuste a altura conforme necessário */
+  height: 750px; /* Ajuste a altura conforme necessário */
   display: flex;
   align-items: center; /* Alinha verticalmente */
   justify-content: flex; /* Alinha horizontalmente à direita */
@@ -142,4 +143,31 @@ font-weight:  700;
 
 .email-button:hover {
   background-color: #0056b3; /* Cor de fundo mais escura quando o mouse está sobre o botão */
+}
+
+.sidebar {
+    height: 100vh; /* Altura total da viewport */
+    width: 200px; /* Largura da barra lateral */
+    position: fixed; /* Fixa na viewport */
+    left: 0; /* Alinha à esquerda da página */
+    background-color: #333; /* Cor de fundo da barra lateral */
+    padding: 20px 10px; /* Espaçamento interno */
+}
+
+.sidebar a {
+    display: block; /* Faz cada link ser um bloco */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno para cada link */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 18px; /* Tamanho do texto */
+}
+
+.sidebar a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+.content {
+    margin-left: 220px; /* Margem esquerda para não sobrepor a barra lateral */
+    padding: 20px; /* Espaçamento interno */
+    flex: 1; /* Ocupa o espaço restante */
 }
