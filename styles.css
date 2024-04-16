@@ -51,6 +51,7 @@ footer {
     padding: 10px ; /* Adiciona um espaçamento vertical */
     font-family: "Sarala", sans-serif;
     font-weight:  400;
+    font-size: 25px; /* Define o tamanho padrão do texto */
     color: white; /* Define a cor do texto para branco */
     font-size: 1.0em; /* Aumenta o tamanho da fonte do título */
 }
@@ -170,4 +171,38 @@ font-weight:  700;
     margin-left: 220px; /* Margem esquerda para não sobrepor a barra lateral */
     padding: 20px; /* Espaçamento interno */
     flex: 1; /* Ocupa o espaço restante */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 300px; /* ajuste a altura conforme necessário */
+    overflow: hidden;
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorcer */
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o título */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
 }
