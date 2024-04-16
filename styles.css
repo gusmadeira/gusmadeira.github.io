@@ -1,9 +1,77 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+.topnav {
+    background-color: darkslateblue;
+    font-family: "Sarala", sans-serif;
+    font-weight:  400;
+    color: white;
+    padding: 13px 20px;
+    text-align: center;
 }
 
-h1 {
-  color: #007BFF;
+.topnav ul {
+    list-style-type: upper-alpha;
+    padding: 0;
+    margin: 0;
+}
+
+.topnav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.topnav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.topnav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: darkslateblue; /* Define a cor de fundo como azul */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    padding: 20px 0; /* Adiciona um espaçamento vertical */
+    font-family: "Sarala", sans-serif;
+    font-weight:  700;
+    font-style: normal;
+    color: white; /* Define a cor do texto para branco */
+}
+
+header h1 {
+    margin: 0; /* Remove a margem padrão do h1 */
+    font-size: 2.5em; /* Aumenta o tamanho da fonte do título */
+}
+
+footer {
+    background-color: darkslateblue; /* Define a cor de fundo como azul */
+    text-align: left; /* Centraliza o texto dentro do cabeçalho */
+    padding: 10px ; /* Adiciona um espaçamento vertical */
+    font-family: "Sarala", sans-serif;
+    font-weight:  400;
+    color: white; /* Define a cor do texto para branco */
+    font-size: 1.0em; /* Aumenta o tamanho da fonte do título */
+}
+
+footer p {
+    margin: 0; /* Remove a margem padrão do h1 */
+}
+
+main {
+    font-family: "Sarala", sans-serif;
+    font-weight:  400;
+    color: black; /* Define a cor do texto para branco */
+    font-size: 16px; /* Define o tamanho padrão do texto */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas para melhorar a leitura */
+    padding: 20px; /* Adiciona um pouco de espaço dentro do main */
+}
+
+main h1, main h2, main h3 {
+    font-weight: 700; /* Aplica o peso negrito para cabeçalhos */
+    color: white; /* Uma cor de destaque para títulos */
+}
+
+main p {
+    margin-bottom: 10px; /* Adiciona espaço abaixo de cada parágrafo */
 }
