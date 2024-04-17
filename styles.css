@@ -209,3 +209,13 @@ font-weight:  700;
     align-items: center; /* Centraliza verticalmente o conteúdo */
     padding: 0; /* Removendo qualquer padding interno para não afetar o alinhamento */
 }
+
+a {
+    color: black; /* Define a cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: darkblue; /* Muda a cor ao passar o mouse */
+}
