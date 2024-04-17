@@ -91,21 +91,21 @@ main p {
 
 .text-box {
   background-color: rgba(0, 0, 0, 0.1); /* Fundo preto com 50% de opacidade */
-  padding: 27px;
-  width: 287px; /* Ajuste conforme necessário */
+  padding: 25px;
+  width: px; /* Ajuste conforme necessário */
   text-align: left; /* Alinha o texto à esquerda */
 }
 
 .hero-banner h2 {
 font-family: "Sarala", sans-serif;
 font-weight:  700;
-  font-size: 34px; /* Tamanho do título */
+  font-size: 50px; /* Tamanho do título */
   margin: 0 0 5px 0; /* Adiciona margem inferior de 20px */
   padding: 5px 0; /* Espaçamento vertical */
 }
 
 .hero-banner h3 {
-  font-size: 24px; /* Tamanho do subtítulo */
+  font-size: 40px; /* Tamanho do subtítulo */
   margin: 3; /* Remove margens padrão */
   padding: 1px 0; /* Espaçamento vertical */
 }
