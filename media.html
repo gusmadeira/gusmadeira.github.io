@@ -6,23 +6,26 @@
     <title>CV</title>
     <link rel="stylesheet" href="styles.css">
     
-      <style>
+   <style>
+
         .news-box {
             border: 1px solid #ccc;
-            width: 300px; /* Define a largura fixa */
-            height: 400px; /* Define uma altura fixa */
-            margin: 10px; /* Espaço ao redor do quadrado */
+            width: 40%; /* Metade da largura do contêiner pai */
+            height: auto; /* Altura automática para manter a proporção */
+            margin: 10px auto; /* Centraliza o quadrado e adiciona espaço ao redor */
             text-align: center;
-            overflow: hidden; /* Garante que o conteúdo não ultrapasse o tamanho definido */
+            display: block; /* Permite que múltiplos quadrados fiquem lado a lado se houver espaço */
         }
         .news-box img {
             width: 100%; /* Faz a imagem cobrir a largura total do quadrado */
-            height: 70%; /* Altura da imagem */
+            height: auto; /* Define uma altura fixa para a imagem */
         }
         .news-box p {
-            margin: 0; /* Remove a margem padrão do parágrafo */
-            padding: 10px 0; /* Padding superior e inferior para o texto */
-            background-color: #f8f8f8; /* Cor de fundo para o título */
+            margin: 0;
+            padding: 10px 5px;
+            background-color: #f8f8f8;
+            text-align: left;
+            overflow: hidden; /* Garante que o texto não ultrapasse a área designada */
         }
     </style>
     
@@ -48,57 +51,60 @@
         <h1>Media Presence</h1>
     </header>
     <main>
+       
 
-     <h1>Work in progress...</h1>
-        
-        <div class="grid-container">
-
-        <a href="https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2024/03/09/conheca-o-cientista-brasileiro-especialista-em-satelites-que-fez-missao-com-a-nasa.ghtml"  target="_blank">
-              <div class="news-box">
-    <div style="border: 1px solid #ccc; width: 300px; text-align: center;">
-        <img src="media/g1.jpeg" alt="Portal G1" style="width: 100%;">
+            
+<div class="news-box">
+        <a href="https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2024/03/09/conheca-o-cientista-brasileiro-especialista-em-satelites-que-fez-missao-com-a-nasa.ghtml"  target="_blank">    
+        <img src="media/g1.png" alt="Portal G1" style="width: 100%;">
         <p>Portal G1: Conheça o cientista brasileiro especialista em satélites que fez missão com a Nasa</p>
-    </div>
-                   </div>
 </a>
+    </div>
+        
         <br>
-             
-                     <a href="https://www.estadao.com.br/ciencia/quem-e-o-cientista-brasileiro-que-fez-descoberta-sobre-asteroide-e-esteve-em-missoes-da-nasa/?utm_source=twitter:newsfeed&utm_medium=social-organic&utm_campaign=redes-sociais:122023:e&utm_content=:::&utm_term="  target="_blank">
-    <div style="border: 1px solid #ccc; width: 300px; text-align: center;">
-        <img src="media/estadao.jpg" alt="Estadao" style="width: 100%;">
+   <div class="news-box">          
+    <a href="https://www.estadao.com.br/ciencia/quem-e-o-cientista-brasileiro-que-fez-descoberta-sobre-asteroide-e-esteve-em-missoes-da-nasa/?utm_source=twitter:newsfeed&utm_medium=social-organic&utm_campaign=redes-sociais:122023:e&utm_content=:::&utm_term="  target="_blank">
+        <img src="media/estadao.png" alt="Estadao" style="width: 100%;">
         <p>Jornal Estadão: Quem é o cientista brasileiro que fez descoberta sobre asteroide e esteve em missões da Nasa</p>
-    </div>
-</a>
-             
+        </a>
+        </div>
+        
+            <br>
+
+        <div class="news-box">          
     <a href="https://www.ipgp.fr/actus-et-agenda/actualites/un-modele-de-formation-des-asteroides-valide-par-les-observations-de-la-sonde-lucy-nasa/"  target="_blank">
-    <div style="border: 1px solid #ccc; width: 300px; text-align: center;">
         <img src="media/ipgp.jpg" alt="IPGP" style="width: 100%;">
         <p>IPGP: Un modèle de formation des astéroïdes validé par les observations de la sonde Lucy (NASA)</p>
-    </div>
 </a>
+    </div>
 
+            <br>
+
+   <div class="news-box">          
      <a href="https://jornal.unesp.br/2023/12/05/pesquisa-soluciona-enigma-do-formato-de-asteroide-alvejado-em-primeiro-experimento-de-defesa-planetaria/"  target="_blank">
-    <div style="border: 1px solid #ccc; width: 300px; text-align: center;">
         <img src="media/unespdart.jpg" alt="Unesp" style="width: 100%;">
         <p>Jornal da UNESP: Pesquisa soluciona enigma do formato de asteroide alvejado em primeiro experimento de defesa planetária</p>
-    </div>
 </a>
- 
+    </div>
+
+
+   <div class="news-box">           
              <a href="https://veja.abril.com.br/ciencia/as-novas-missoes-da-nasa-e-agencia-espacial-europeia-para-jupiter"  target="_blank">
-    <div style="border: 1px solid #ccc; width: 300px; text-align: center;">
         <img src="media/veja.jpg" alt="Veja" style="width: 100%;">
         <p>Revista Veja: As novas missões da Nasa e Agência Espacial Europeia para Júpiter </p>
-    </div>
 </a>
-        
+    </div>
+
+
+   <div class="news-box">         
     <a href="https://jornal.unesp.br/2021/10/22/artigo-propoe-nova-hipotese-para-origem-das-luas-galileanas/"  target="_blank">
-    <div style="border: 1px solid #ccc; width: 300px; text-align: center;">
         <img src="media/unespluas.jpg" alt="Unesp" style="width: 100%;">
         <p>Jornal da UNESP: Artigo propõe nova hipótese para origem das luas Galileanas</p>
-    </div>
 </a>
-        
-</div>
+    </div>
+
+
+       
     </main>
     
     
