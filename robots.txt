@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://gusmadeira.github.io/index.html
