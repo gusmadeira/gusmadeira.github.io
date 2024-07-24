@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications</title>
     <link rel="stylesheet" href="styles.css">
+        <style>
+        .custom-container {
+            width: 100%; /* Ocupa toda a largura da tela */
+            text-align: center; /* Centraliza o conteúdo */
+            margin: 0 auto; /* Centraliza a div */
+        }
+        .custom-container .custom-title {
+            text-align: left; /* Alinha o título à esquerda */
+            font-family: "Sarala", sans-serif;
+            font-weight:  700;
+            color: black; /* Define a cor do texto para branco */
+            font-size: 20px; /* Define o tamanho padrão do texto */
+            color: black; /* Cor do texto */
+        }
+        .custom-container .custom-image {
+            display: block; /* Garante que a imagem seja tratada como um bloco */
+            margin: 0 30; /* Centraliza a imagem horizontalmente */
+            width: 45%; /* Define a largura da imagem como 50% da largura da div */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .custom-container .custom-text {
+            text-align: left; /* Centraliza o texto abaixo da imagem */\
+            font-family: "Sarala", sans-serif;
+            padding: 20px; /* Adiciona um padding ao redor do texto */
+            font-size: 18px; /* Tamanho do texto */
+            color: black; /* Cor do texto */
+        }
+    </style>
 </head>
     <nav class="topnav">
         <ul>
@@ -17,7 +45,9 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-<body>
+
+    
+    <body>
     <header>
         <h1>Publications</h1>
     </header>
@@ -25,13 +55,18 @@
                         
     <h1>Bibliometric data</h1>
     
-             <p> H=6, 87 citations (Source: <a href="https://scholar.google.com/citations?user=ZF1mcjoAAAAJ&hl=en&oi=ao"  target="_blank">Google Scholar</a>), 15 articles in international peer reviewed journals, 9 articles as first author (updated 17/04/2024).</p>
+             
 
-
+            <div class="custom-container">
+        <div class="custom-title">H=6, 16 articles in international peer reviewed journals, 9 articles as first author</div><br>
+        <img src="research/citation.png" alt="citation" class="custom-image">
+        <div class="custom-text">Source: <a href="https://scholar.google.com/citations?user=ZF1mcjoAAAAJ&hl=en&oi=ao"  target="_blank">Google Scholar (updated 24/07/2024) </a></div>
+    </div>
         
     <h1>Published articles</h1>
     <h2>2024</h2>    
     <ul>
+        <li><a href="https://arxiv.org/pdf/2407.15543.pdf" target="_blank">Wimarsson et al.: Rapid formation of binary asteroid systems post rotational failure: A recipe for making atypically shaped satellites</a></li>
         <li><a href="https://arxiv.org/pdf/2402.03943.pdf" target="_blank">Madeira et al.: Long-term dust dynamics in the Didymos and Dimorphos system: Production, stability, and transport.</a></li>
         <li><a href="https://arxiv.org/pdf/2311.07271.pdf" target="_blank">Madeira & Charnoz: Revisiting Dimorphos formation: A pyramidal regime perspective and application to Dinkinesh’s satellite</a></li>
     </ul>  
