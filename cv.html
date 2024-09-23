@@ -4,8 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <meta name="description" content="Curriculum Vitae de Gustavo Madeira - Astrofísico e Pesquisador.">
+    <meta name="keywords" content="gustavo madeira, cv, curriculum vitae, astrophysics">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .topnav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .topnav ul li {
+            margin: 0 20px;
+        }
+        .topnav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            font-size: 20px;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        .topnav ul li a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        ul li strong {
+            font-weight: 700;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .social-icons {
+            margin-top: 12px;
+        }
+        .social-icons a {
+            margin: 0 12px;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ff4500;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
+<body>
+
+    <!-- Navegação no topo -->
     <nav class="topnav">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -14,74 +126,82 @@
             <li><a href="research.html">Research</a></li>   
             <li><a href="publications.html">Publications</a></li>
             <li><a href="teaching.html">Teaching</a></li>    
-            <li><a href="media.html">Media Presence</a></li>    
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="media.html">Media Presence</a></li>
         </ul>
     </nav>
-<body>
+
+    <!-- Seção Principal -->
     <header>
         <h1>Curriculum Vitae</h1>
     </header>
+
     <main>
+        <h1>Academic Background</h1>
+        <ul>
+            <li><strong>PhD in Physics, São Paulo State University (UNESP), Brazil, 2019–2023.</strong><br>Title: Exploring models of formation and dynamic evolution of satellites and rings of the Solar System.<br>Advisor: Silvia Maria Giuliatti Winter.<br>Co-advisor: André Izidoro Ferreira da Costa.<br>Abroad Internship (2021–2022): Institut de Physique du Globe de Paris, France.<br>Supervision: Sebastien Charnoz.</li>
+            <li><strong>Master's in Physics, São Paulo State University (UNESP), Brazil, 2016–2019.</strong><br>Title: Study of the orbital evolution of particles in corotation and Lindblad resonance under the influence of co-orbital satellites: application to planetary arcs.<br>Advisor: Silvia Maria Giuliatti Winter.</li>
+            <li><strong>Bachelor in Physics, São Paulo State University (UNESP), Brazil, 2012–2016.</strong><br>Title: Dynamics of micrometric particles in Saturn's G ring arc.<br>Advisor: Silvia Maria Giuliatti Winter.</li>
+        </ul>
+             
+        <h1>Postdoctoral</h1>
+        <ul>
+            <li><strong>Institut de Physique du Globe de Paris, France, 2023-2025.</strong><br>Project: Modeling of volatile loss from the Moon.<br>Funding: European Research Council (ERC).<br>Supervisor: Frederic Moynier.</li>
+        </ul>
 
-     <h1>Academic Background</h1>
-         <ul>
-    <li>PhD in Physics, São Paulo State University, UNESP, Brazil, 2019–2023. <br><strong>Title:</strong> Exploring models of formation and dynamic evolution of satellites and rings of the Solar System. <br><strong>Advisor:</strong> Silvia Maria Giuliatti Winter. <br><strong>Co-advisor:</strong> André Izidoro Ferreira da Costa. <br><strong>Abroad Internship (2021–2022):<br></strong> Institut de Physique du Globe de Paris, France. <br><strong>Supervision:</strong> Sebastien Charnoz.</li>
-    <li>Master's in Physics, São Paulo State University, UNESP, Brazil, 2016–2019. <br><strong>Title:</strong> Study of the orbital evolution of particles in corotation and Lindblad resonance under the influence of co-orbital satellites: application to planetary arcs. <br><strong>Advisor:</strong> Silvia Maria Giuliatti Winter.</li>
-    <li>Bachelor in Physics, São Paulo State University, UNESP, Brazil, 2012–2016. <br><strong>Title:</strong> Dynamics of micrometric particles in Saturn's G ring arc. <br><strong>Advisor:</strong> Silvia Maria Giuliatti Winter. </li>
+        <h1>Involvement in Space Missions</h1>
+        <ul>
+            <li><strong>HERA Mission, European Space Agency (ESA).</strong> Member of the Dynamics team (Working Group 3), 2023–.</li>
+            <li><strong>DART Mission, National Aeronautics and Space Administration (NASA).</strong> Member of the Investigation team, 2023.</li>
         </ul>
-             
-     <h1>Postdoctoral</h1>
-         <ul>
-    <li>Institut de Physique du Globe de Paris, France, 2023-2025. <br><strong>Project:</strong> Modeling of volatile loss from the Moon. <br><strong>Funding:</strong> European Research Council (ERC). <br><strong>Supervisor:</strong> Frederic Moynier.</li>
-        </ul>
-             
-    <h1>Involvement in Space Missions</h1>
-         <ul>
-             <li>HERA Mission, European Space Agency (ESA), member of the Dynamics team (Working Group 3), 2023–.</li> 
-     <li>DART Mission, National Aeronautics and Space Administration (NASA), member of the Investigation team, 2023.</li>
-        </ul>
-             
-    <h1>Teaching Experience</h1>
-         <ul>
-<li>Graduation in Physics and Astronomy, Formation of Satellites and Rings, 2024.</li>
-<li>Short Course, Intrinsic Relationship between Satellites and Planetary Rings, 2023.</li>
-<li>Undergraduate, Differential and Integral Calculus, 2019.</li>
-<li>Undergraduate, Mathematics applied to Material Engineering, 2019.</li>
-        </ul>
-             
-    <h1>Complementary Formation</h1>
-         <ul>
-    <li>COSPAR Capacity Building Workshop Planetary Sciences Data Analysis, COSPAR, Chile, 2023.</li>
-        <li>XXIV Special Courses Cycle, National Observatory, Brazil, 2019. </li>
-            <li>Third Astrobiology School at National Observatory, National Observatory, Brazil, 2018. </li>
-             <li>XXI Special Courses Cycle, National Observatory, Brazil, 2017.</li>
-        </ul>
-             
-    <h1>Fundings</h1>
-         <ul>
-    <li>Modeling of volatile loss from the Moon, European Research Council (ERC), 2023–2025. 
-  <li>      Tidal evolution of Mars' moons: satellite destruction and fall onto Mars and its implications for the MMX/JAXA mission, São Paulo Research Foundation (FAPESP), 2021–2022. </li>
-             <li>    Scenarios for the formation of Neptune's arcs and the large satellites of the gas giants, São Paulo Research Foundation (FAPESP), 2019–2022. </li>
-    <li>    Study of the orbital evolution of particles in Lindblad and corotation resonance under the influence of co-orbital satellites: application to planetary arcs, São Paulo Research Foundation (FAPESP), 2017–2019. </li>
-    <li>    Study of the electromagnetic force effect on small planetary ring particles, São Paulo Research Foundation (FAPESP), 2013–2016.</li>
-        </ul>
-             
-    <h1>Honours</h1>
-         <ul>
-        <li>Wagner Sessin Award in Dynamical and Planetary Astronomy,2024</li>
-             <li>Unesp Grand Prize for Theses, 2024</li>
-        <li>Unesp Prize for Theses in Engineering, Exact and Earth Sciences, 2024</li>
-   <li>Academic Excellence Award, 2017.</li>
-        </ul>
-               
 
+        <h1>Teaching Experience</h1>
+        <ul>
+            <li>Graduation in Physics and Astronomy, Formation of Satellites and Rings, 2024.</li>
+            <li>Short Course, Intrinsic Relationship between Satellites and Planetary Rings, 2023.</li>
+            <li>Undergraduate, Differential and Integral Calculus, 2019.</li>
+            <li>Undergraduate, Mathematics applied to Material Engineering, 2019.</li>
+        </ul>
+
+        <h1>Complementary Formation</h1>
+        <ul>
+            <li>COSPAR Capacity Building Workshop Planetary Sciences Data Analysis, COSPAR, Chile, 2023.</li>
+            <li>XXIV Special Courses Cycle, National Observatory, Brazil, 2019.</li>
+            <li>Third Astrobiology School at National Observatory, National Observatory, Brazil, 2018.</li>
+            <li>XXI Special Courses Cycle, National Observatory, Brazil, 2017.</li>
+        </ul>
+
+        <h1>Fundings</h1>
+        <ul>
+            <li>Modeling of volatile loss from the Moon, European Research Council (ERC), 2023–2025.</li>
+            <li>Tidal evolution of Mars' moons: satellite destruction and fall onto Mars and its implications for the MMX/JAXA mission, São Paulo Research Foundation (FAPESP), 2021–2022.</li>
+            <li>Scenarios for the formation of Neptune's arcs and the large satellites of the gas giants, São Paulo Research Foundation (FAPESP), 2019–2022.</li>
+            <li>Study of the orbital evolution of particles in Lindblad and corotation resonance under the influence of co-orbital satellites: application to planetary arcs, São Paulo Research Foundation (FAPESP), 2017–2019.</li>
+            <li>Study of the electromagnetic force effect on small planetary ring particles, São Paulo Research Foundation (FAPESP), 2013–2016.</li>
+        </ul>
+
+        <h1>Honours</h1>
+        <ul>
+            <li>Wagner Sessin Award in Dynamical and Planetary Astronomy, 2024.</li>
+            <li>Unesp Grand Prize for Theses, 2024.</li>
+            <li>Unesp Prize for Theses in Engineering, Exact and Earth Sciences, 2024.</li>
+            <li>Academic Excellence Award, 2017.</li>
+        </ul>
     </main>
-    
-    
+
+    <!-- Rodapé -->
     <footer>
         <p>© 2024 by Gustavo Madeira. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://scholar.google.com/citations?hl=en&user=ZF1mcjoAAAAJ" target="_blank"><i class="fab fa-google"></i> Google Scholar</a>
+            <a href="https://orcid.org/0000-0001-5138-230X" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
+            <a href="https://twitter.com/MadeiraAstro" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://github.com/gusmadeira" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="http://lattes.cnpq.br/2751228869487751" target="_blank"><i class="fas fa-address-card"></i> CV Lattes</a>
+        </div>
     </footer>
+
+    <!-- Font Awesome para ícones de redes sociais -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </body>
 </html>
-
