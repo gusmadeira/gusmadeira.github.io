@@ -1,11 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About me</title>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <meta name="description" content="Sobre Gustavo Madeira - Astrofísico e Pesquisador.">
+    <meta name="keywords" content="gustavo madeira, about, astrophysics, cosmochemistry, research">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .topnav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .topnav ul li {
+            margin: 0 20px;
+        }
+        .topnav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            font-size: 17px;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        .topnav ul li a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        
+        #research-topics {
+            color: black;
+        }
+
+        .about-me {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .column {
+            width: 45%;
+        }
+
+        .photo img {
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: auto;
+        }
+
+        .bio {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        ul li strong {
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ff4500;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-banner h2 {
+                font-size: 40px;
+            }
+            .hero-banner h3 {
+                font-size: 24px;
+            }
+            .hero-banner {
+                height: 70vh;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação no topo -->
     <nav class="topnav">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -14,86 +159,64 @@
             <li><a href="research.html">Research</a></li>   
             <li><a href="publications.html">Publications</a></li>
             <li><a href="teaching.html">Teaching</a></li>    
-            <li><a href="media.html">Media Presence</a></li>    
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="media.html">Media Presence</a></li>
         </ul>
     </nav>
-    <body>
-        
-        <header>
-            <h1>About Me</h1>
-        </header>
 
-        <main>
-            <section class="about-me">
-                <div class="column photo">
-                    <img
-                        src="IMG_2260.jpeg"
-                        alt="Your Photo"
-                        style="width: 100%" />
-                    <p> Cosmochemistry, Astrophysics and Experimental Geophysics </p>
-                    <p> Institut de Physique du Globe de Paris</p>
-                    <p> Bureau 233, 1 rue Jussieu, 75005, Paris, France </p>
-                    <p> madeira@ipgp.fr </p>
-                    <p>  +33 7 45 18 28 27 </p>                   
-                    
-                </div>
+    <!-- Seção Principal -->
+    <header>
+        <h1>About Me</h1>
+    </header>
 
-                <div class="column bio">
-                    <h1>Profile</h1>
+    <main>
+        <section class="about-me">
 
-                    <p>
-                        I am a PhD in Physics, with emphasis on Position
-                        Astronomy and Celestial Mechanics, and currently hold a
-                        Post-doctoral Researcher position at the Institut de
-                        Physique du Globe de Paris (IPGP), France. My research
-                        covers the formation of satellites, physics of planetary
-                        rings, circumplanetary disks, and the dynamic evolution
-                        of small bodies in the Solar System. I use numerical
-                        simulations and analytical development in orbital
-                        dynamics, with a focus on connecting both.
-                    </p>
+            <div class="column photo">
+                <img src="IMG_2260.jpeg" alt="Your Photo" />
+                <p> Cosmochemistry, Astrophysics and Experimental Geophysics </p>
+                <p> Institut de Physique du Globe de Paris</p>
+                <p> Bureau 233, 1 rue Jussieu, 75005, Paris, France </p>
+                <p> madeira@ipgp.fr </p>
+                <p> +33 7 45 18 28 27 </p>                   
+            </div>
 
-                    <h1>Research Topics</h1>
-                    <ul>
-                        <li>
-                            <strong>Satellite formation:</strong> accretion in
-                            circumplanetary disks and rings, pebble accretion,
-                            gas-driven migration, tides, and ring torques.
-                        </li>
-                        <li>
-                            <strong>Giant impacts:</strong> formation of the
-                            Moon, formation of Phobos and Deimos.
-                        </li>
-                        <li>
-                            <strong>Composition:</strong> composition of the
-                            Moon, exoplanets' atmosphere.
-                        </li>
-                        <li>
-                            <strong>Small bodies:</strong> formation of binary
-                            systems, rings, and dynamics around small bodies.
-                        </li>
-                        <li>
-                            <strong>Perturbations on small bodies:</strong>
-                            solar radiation, plasma drag, Lorentz forces, tides,
-                            and Yarkovsky effect.
-                        </li>
-                        <li>
-                            <strong>Ring dynamics:</strong> stability and
-                            formation of planetary rings and arcs.
-                        </li>
-                        <li>
-                            <strong>Small impacts:</strong> dust production due
-                            to meteoroid impacts.
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+            <div class="column bio">
+                <p>
+                    I hold a PhD in Physics from São Paulo State University (Brazil) and am currently completing a two-year postdoctoral fellowship at the Institut de Physique du Globe de Paris (France). My research focuses on contributing to the understanding of the formation, evolution, and composition of Solar System objects, as well as those in exo-solar systems. I have a solid background in studying the formation and dynamics of satellites and Solar System minor bodies. Additionally, my current work at a cosmochemistry lab has strengthened my connection to the field of cosmochemistry. My research primarily involves numerical simulations. I have extensive experience with various computational tools, including N-body codes, hydrodynamics codes, and SPH codes. Furthermore, I am deeply interested in orbital dynamics theory and strive to compare my numerical results with theoretical predictions and observational data. I have been part of NASA's DART mission and currently I am a member of the ESA's Hera mission. My contributions to the field have been recognized with the Wagner Sessin Awards in Dynamical and Planetary Astronomy and the Best Thesis Award from São Paulo State University.
+                </p>
+            </div>
 
-        <footer>
-            <p>© 2024 by Gustavo Madeira. All rights reserved.</p>
-        </footer>
-    </body>
+        </section>
+
+        <section>
+            <h1 id="research-topics">Research Topics</h1>
+            <ul>
+                <li><strong>Satellite formation:</strong> accretion in circumplanetary disks and rings, pebble accretion, gas-driven migration, tides, and ring torques.</li>
+                <li><strong>Giant impacts:</strong> formation of the Moon, formation of Phobos and Deimos.</li>
+                <li><strong>Composition:</strong> composition of the Moon, exoplanets' atmosphere.</li>
+                <li><strong>Small bodies:</strong> formation of binary systems, rings, and dynamics around small bodies.</li>
+                <li><strong>Perturbations on small bodies:</strong> solar radiation, plasma drag, Lorentz forces, tides, and Yarkovsky effect.</li>
+                <li><strong>Ring dynamics:</strong> stability and formation of planetary rings and arcs.</li>
+                <li><strong>Small impacts:</strong> dust production due to meteoroid impacts.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 by Gustavo Madeira. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://scholar.google.com/citations?hl=en&user=ZF1mcjoAAAAJ" target="_blank"><i class="fab fa-google"></i> Google Scholar</a>
+            <a href="https://orcid.org/0000-0001-5138-230X" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
+            <a href="https://twitter.com/MadeiraAstro" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://github.com/gusmadeira" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="http://lattes.cnpq.br/2751228869487751" target="_blank"><i class="fas fa-address-card"></i> CV Lattes</a>
+        </div>
+    </footer>
+
+    <!-- Font Awesome para ícones de redes sociais -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</body>
 </html>
-
