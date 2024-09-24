@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Righteous&family=Sarala:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
         .topnav {
             background-color: #333;
@@ -29,31 +36,67 @@
             color: #333;
         }
 
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #333;
+            color: white;
+        }
 
-header {
-    background-color: darkslateblue; /* Define a cor de fundo como azul */
-    text-align: center; /* Centraliza o texto dentro do cabeçalho */
-    padding: 20px 0; /* Adiciona um espaçamento vertical */
-    font-family: "Sarala", sans-serif;
-    font-weight:  700;
-    font-style: normal;
-    color: white; /* Define a cor do texto para branco */
-}
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+        }
 
-header h1 {
-    margin: 0; /* Remove a margem padrão do h1 */
-    font-size: 2.5em; /* Aumenta o tamanho da fonte do título */
-}
+        ul {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: none;
+        }
 
-footer {
-    background-color: darkslateblue; /* Define a cor de fundo como azul */
-    text-align: left; /* Centraliza o texto dentro do cabeçalho */
-    padding: 10px ; /* Adiciona um espaçamento vertical */
-    font-family: "Sarala", sans-serif;
-    font-weight:  400;
-    font-size: 15px; /* Define o tamanho padrão do texto */
-    color: white; /* Define a cor do texto para branco */
-}
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        ul li strong {
+            font-weight: 700;
+        }
+
+       footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .social-icons {
+            margin-top: 12px;
+        }
+        .social-icons a {
+            margin: 0 12px;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ff4500;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
 
 footer p {
     margin: 0; /* Remove a margem padrão do h1 */
