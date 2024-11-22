@@ -88,7 +88,7 @@
         <h3>Animations</h3>
         
         <div class="video-container">
-            <video width="700" height="250" controls>
+            <video class="degassing1" width="700" height="250" controls>
                 <source src="research/Fig2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -99,7 +99,7 @@
  
                 <div class="video-container">
             <video width="700" height="250" controls>
-                <source src="research/Fig2.mp4" type="video/mp4">
+                <source src="research/Fig4.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -108,6 +108,14 @@
         </p>
         
     </main>
+    
+    <script>
+    // Define playback speed for a specific video by class and source
+    const specificVideo = document.querySelector('degassing1-video[src="research/Fig2.mp4"]');
+    if (specificVideo) {
+        specificVideo.playbackRate = 2.0;
+    }
+    </script>
 
     <!-- Rodapé -->
     <footer>
