@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Righteous&family=Sarala:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sarala:wght@400;700&display=swap');
 
         body {
             font-family: 'Roboto', sans-serif;
@@ -16,17 +15,11 @@
             scroll-behavior: smooth;
         }
 
-
-
-
-        main {
-            flex: 1;
-        }
-
         .topnav {
             background-color: #333;
             overflow: hidden;
         }
+
         .topnav ul {
             list-style: none;
             padding: 0;
@@ -116,6 +109,7 @@ footer p {
 }
 
 main {
+    flex: 1;
     font-family: "Sarala", sans-serif;
     font-weight:  400;
     color: black; /* Define a cor do texto para branco */
@@ -148,7 +142,8 @@ main p {
 .text-box {
   background-color: rgba(0, 0, 0, 0.1); /* Fundo preto com 50% de opacidade */
   padding: 25px;
-  width: px; /* Ajuste conforme necessário */
+  width: 100%;
+  max-width: 600px;
   text-align: left; /* Alinha o texto à esquerda */
 }
 
@@ -162,7 +157,7 @@ font-weight:  700;
 
 .hero-banner h3 {
   font-size: 40px; /* Tamanho do subtítulo */
-  margin: 3; /* Remove margens padrão */
+  margin: 3px 0;
   padding: 1px 0; /* Espaçamento vertical */
 }
 .about-me {

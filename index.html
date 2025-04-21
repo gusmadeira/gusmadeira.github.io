@@ -7,8 +7,13 @@
     <meta name="description" content="Descrição do site de Gustavo Madeira">
     <meta name="keywords" content="gustavo,madeira,astronomy,astronomer,astrophysicist">
     <meta name="google-site-verification" content="AlGppGpIkCaZHEwnyz4baXk7WL0W_uQnVxqwFKUZp38">
+    
+    <!-- Estilos principais -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Fonte Roboto (já incluída no styles.css, mas mantida por segurança) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos específicos da página -->
     <style>
         .hero-banner {
             background-image: url('PIA00024_save.jpg');
@@ -23,7 +28,6 @@
             transition: background 0.5s ease;
         }
         .hero-banner h2 {
-            justify-content: center;
             font-size: 50px;
             font-weight: 700;
             margin: 0;
@@ -31,6 +35,7 @@
         .hero-banner h3 {
             font-size: 30px;
             font-weight: 400;
+            margin: 10px 0;
         }
         .hero-banner .button {
             margin-top: 20px;
@@ -49,31 +54,33 @@
             background-color: #e63900;
             transform: translateY(-3px);
         }
-
-
     </style>
 </head>
 <body>
 
-    <!-- Navegação no topo -->
+    <!-- Cabeçalho dinâmico -->
     <div id="navbar"></div>
 
-    <!-- Seção Hero Banner -->
-<div class="hero-banner" >
-    <div class="text-box">
-        <center><h2>Gustavo Madeira</h2></center>
-        <center><h3>Research Scientist at Observatório Nacional (Brazil)</h3></center>
-        <center><button class="button" onclick="window.open('https://www.gov.br/observatorio/pt-br', '_blank')">About Observatório Nacional </button></center>
-    </div>
-</div>
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="hero-banner">
+            <div class="text-box">
+                <h2>Gustavo Madeira</h2>
+                <h3>Research Scientist at Observatório Nacional (Brazil)</h3>
+                <button class="button" onclick="window.open('https://www.gov.br/observatorio/pt-br', '_blank')">
+                    About Observatório Nacional
+                </button>
+            </div>
+        </div>
+    </main>
 
-    <script src="navbar-loader.js"></script>
-
+    <!-- Rodapé dinâmico -->
     <div id="footer"></div>
+
+    <!-- Scripts: ordem importa -->
+    <script src="navbar-loader.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="footer-loader.js"></script>
-
-
 
 </body>
 </html>
