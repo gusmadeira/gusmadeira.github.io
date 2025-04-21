@@ -7,14 +7,22 @@
     <meta name="description" content="Descrição do site de Gustavo Madeira">
     <meta name="keywords" content="gustavo,madeira,astronomy,astronomer,astrophysicist">
     <meta name="google-site-verification" content="AlGppGpIkCaZHEwnyz4baXk7WL0W_uQnVxqwFKUZp38">
-    
-    <!-- Estilos principais -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Fonte Roboto (já incluída no styles.css, mas mantida por segurança) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Estilos específicos da página -->
     <style>
+        
+    body {
+        animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
         .hero-banner {
             background-image: url('PIA00024_save.jpg');
             background-size: cover;
@@ -28,59 +36,86 @@
             transition: background 0.5s ease;
         }
         .hero-banner h2 {
-            font-size: 50px;
-            font-weight: 700;
-            margin: 0;
+        font-family: 'Sarala', sans-serif;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 1px;
         }
+
         .hero-banner h3 {
-            font-size: 30px;
             font-weight: 400;
-            margin: 10px 0;
         }
         .hero-banner .button {
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: #ff4500;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: bold;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, transform 0.2s ease;
+          margin-top: 20px;
+          padding: 12px 25px;
+          background-color: #ff4500;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: bold;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .hero-banner .button:hover {
             background-color: #e63900;
             transform: translateY(-3px);
         }
+
+        @media (max-width: 600px) {
+      .hero-banner h2 {
+        font-size: 48px;
+      }
+
+      .hero-banner h3 {
+        font-size: 30px;
+      }
+
+      .hero-banner .button {
+        font-size: 20px;
+        padding: 10px 18px;
+      }
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
     </style>
 </head>
 <body>
 
-    <!-- Cabeçalho dinâmico -->
-    <div id="navbar"></div>
+    <!-- Navegação no topo -->
+    <nav class="topnav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="research.html">Research</a></li>   
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>    
+            <li><a href="media.html">Media Presence</a></li>
+        </ul>
+    </nav>
 
-    <!-- Conteúdo principal -->
-    <main>
-        <div class="hero-banner">
-            <div class="text-box">
-                <h2>Gustavo Madeira</h2>
-                <h3>Research Scientist at Observatório Nacional (Brazil)</h3>
-                <button class="button" onclick="window.open('https://www.gov.br/observatorio/pt-br', '_blank')">
-                    About Observatório Nacional
-                </button>
-            </div>
-        </div>
-    </main>
+    <!-- Seção Hero Banner -->
+<div class="hero-banner" >
+    <div class="text-box">
+        <center><h2>Gustavo Madeira</h2></center>
+        <center><h3>Research Scientist at Observatório Nacional (Brazil)</h3></center>
+        <center><button class="button" onclick="window.open('https://www.gov.br/observatorio/pt-br', '_blank')">About Observatório Nacional </button></center>
+    </div>
+</div>
 
-    <!-- Rodapé dinâmico -->
-    <div id="footer"></div>
-
-    <!-- Scripts: ordem importa -->
     <script src="navbar-loader.js"></script>
+
+    <div id="footer"></div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="footer-loader.js"></script>
+
+
 
 </body>
 </html>
