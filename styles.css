@@ -104,9 +104,6 @@
         }
 
 
-footer p {
-    margin: 0; /* Remove a margem padrão do h1 */
-}
 
 main {
     flex: 1;
