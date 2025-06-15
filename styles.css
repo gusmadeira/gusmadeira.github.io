@@ -268,3 +268,28 @@ a:hover {
     color: darkblue; /* Muda a cor ao passar o mouse */
 }
 
+.custom-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px; /* Espaço entre imagem e texto */
+    padding: 20px;
+    flex-wrap: wrap; /* Para responsividade */
+}
+
+.custom-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Impede a imagem de encolher */
+}
+
+.custom-text {
+    max-width: 600px;
+    text-align: justify;
+    font-family: "Sarala", sans-serif;
+    font-size: 18px;
+    color: black;
+}
