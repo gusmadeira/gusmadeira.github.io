@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .custom-container {
+            width: 100%; /* Ocupa toda a largura da tela */
+            text-align: center; /* Centraliza o conteúdo */
+            margin: 0 auto; /* Centraliza a div */
+        }
+        .custom-container .custom-title {
+            text-align: left; /* Alinha o título à esquerda */
+            font-family: "Sarala", sans-serif;
+            font-weight: 700;
+            color: black;
+            font-size: 20px;
+        }
+        .custom-container .custom-image {
+            display: block; /* Garante que a imagem seja tratada como um bloco */
+            margin: 0 auto; /* Centraliza a imagem horizontalmente */
+            width: 80%; /* Define a largura da imagem como 80% da largura da div */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .custom-container .custom-text {
+            text-align: justify; /* Justifica o texto abaixo da imagem */
+            font-family: "Sarala", sans-serif;
+            padding: 20px; /* Adiciona um padding ao redor do texto */
+            font-size: 18px;
+            color: black;
+        }
+        .person-photo {
+            width: 190px;          /* tamanho fixo */
+            aspect-ratio: 1 / 1;   /* quadrado (mude se quiser outro formato) */
+            object-fit: cover;     /* corta o excesso e mantém proporção */
+            object-position: center;
+            border-radius: 10px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- Seção Principal -->
+    <header>
+        <h1>People</h1>
+    </header>
+
+    <main>
+        
+
+    <h2>Current Team</h2>
+
+<div class="topic">
+    <table style="width:100%; border:0;">
+        <tr>
+            <td style="width:20%; vertical-align: top; padding: 10px;">
+                <img src="students/Bruno.jpeg" alt="Chagas" class="person-photo">
+            </td>
+            <td style="width:80%; vertical-align: top; padding: 10px; font-family: 'Sarala', sans-serif; font-size: 18px; text-align: justify;">
+                <p>Dr. Bruno Chagas</p>
+                <p>Postdoctoral Fellow</p>
+                <p>Deflection mechanisms for NEOs on a collision course with Earth</p>
+                <p>2025-</p>
+                    
+            </td>
+        </tr>
+    </table>
+
+    <table style="width:100%; border:0;">
+        <tr>
+            <td style="width:20%; vertical-align: top; padding: 10px;">
+                <img src="students/Paulo.jpeg" alt="Chagas" class="person-photo">
+            </td>
+            <td style="width:80%; vertical-align: top; padding: 10px; font-family: 'Sarala', sans-serif; font-size: 18px; text-align: justify;">
+                <p>Bac. Paulo Soares</p>
+                <p>Master Student</p>
+                <p>Particle dynamics around asymmetrical bodies</p>
+                <p>2024-</p>
+                    
+            </td>
+        </tr>
+    </table>
+
+    <table style="width:100%; border:0;">
+        <tr>
+            <td style="width:20%; vertical-align: top; padding: 10px;">
+                <img src="students/antonio.jpg" alt="antonio" class="person-photo">
+            </td>
+            <td style="width:80%; vertical-align: top; padding: 10px; font-family: 'Sarala', sans-serif; font-size: 18px; text-align: justify;">
+                <p>Antônio Dácio</p>
+                <p>Undergraduate Student</p>
+                <p>Transit of particles between corotation sites</p>
+                <p>2025-</p>
+                    
+            </td>
+        </tr>
+    </table>
+
+    <table style="width:100%; border:0;">
+        <tr>
+            <td style="width:20%; vertical-align: top; padding: 10px;">
+                <img src="students/cesar.jpg" alt="cesar" class="person-photo">
+            </td>
+            <td style="width:80%; vertical-align: top; padding: 10px; font-family: 'Sarala', sans-serif; font-size: 18px; text-align: justify;">
+                <p>César Toto</p>
+                <p>Undergraduate Student</p>
+                <p>Impact modeling in Rebound code</p>
+                <p>2025-</p>
+                    
+            </td>
+        </tr>
+    </table>
+
+        </div>
+
+
+
+
+        
+        
+                
+    </main>
+    
+    <script src="navbar-loader.js"></script>
+
+    <div id="footer"></div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="footer-loader.js"></script>
+
+</body>
+</html>
