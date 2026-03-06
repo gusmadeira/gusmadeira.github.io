@@ -137,10 +137,10 @@ main p {
 }
 
 .text-box {
-  background-color: rgba(0, 0, 0, 0.1); /* Fundo preto com 50% de opacidade */
+  background-color: rgba(0, 0, 0, 0.3); /* Fundo preto com 50% de opacidade */
   padding: 25px;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   text-align: left; /* Alinha o texto à esquerda */
 }
 
