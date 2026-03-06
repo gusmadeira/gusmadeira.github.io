@@ -140,7 +140,7 @@ main p {
   background-color: rgba(0, 0, 0, 0.3); /* Fundo preto com 50% de opacidade */
   padding: 25px;
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   text-align: left; /* Alinha o texto à esquerda */
 }
 
