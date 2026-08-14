@@ -242,6 +242,13 @@ main ol {
     font-size: 40px;
 }
 
+.hero-position,
+.hero-group {
+    margin: 6px 0;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
 /* Página About */
 @media (max-width: 760px) {
     main .about-me {
@@ -666,5 +673,25 @@ body > header > h1,
     .projects-header {
         min-height: 250px;
         padding: 45px 20px;
+    }
+    .hero-banner {
+        padding: 18px;
+    }
+
+    .text-box {
+        padding: 20px 15px;
+    }
+
+    .hero-banner h2 {
+        font-size: 32px;
+    }
+
+    .hero-banner h3 {
+        font-size: 24px;
+    }
+
+    .hero-position,
+    .hero-group {
+        font-size: 17px;
     }
 }
