@@ -24,8 +24,10 @@ Scientific descriptions, publication links and contact details were preserved.
 
 EDIT
 Site design: styles.css
-Navigation: HTML header in each page (static; search-engine friendly).
-Mobile menu: assets/site.js
+Navigation and logo: components/header.html (one file for all pages).
+Footer and links: components/footer.html (one file for all pages).
+Load shared components and control mobile menu: assets/site.js.
+Every page references the shared pieces using a small data-site-header / data-site-footer placeholder.
 Icon: assets/favicon.svg
 
 
@@ -37,3 +39,13 @@ REVISÃO EDITORIAL — 06/11/2026
 - O favicon GM, a identidade visual e a responsividade foram mantidos.
 - Os dois artigos associados ao GODS apontam para as páginas do grupo; as URLs locais antigas redirecionam.
 - O handbook inacabado não é incluído.
+
+
+ATUALIZAÇÃO — HEADER E FOOTER SEM JEKYLL (07/11/2026)
+- Esta versão NÃO usa includes do Jekyll nem front matter YAML.
+- components/header.html e components/footer.html são os únicos locais para editar as partes compartilhadas.
+- assets/site.js carrega os componentes e inicializa o menu após eles estarem disponíveis.
+- Os nomes das abas e os tamanhos de fonte do cabeçalho foram preservados.
+- Para testar, abra o site com Live Preview/Live Server (endereço http://localhost...).
+- Não abra o HTML com file://, pois navegadores bloqueiam fetch() de arquivos locais.
+- Para publicar, copie os arquivos para a raiz do repositório e faça git add -A / commit / push.
