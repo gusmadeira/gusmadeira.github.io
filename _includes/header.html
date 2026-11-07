@@ -1,0 +1,22 @@
+<header class="site-header">
+      <div class="container nav-shell">
+        <a aria-label="Gustavo Madeira — Home" class="brand" href="index.html">
+          <span class="brand-icon">GM<span class="brand-orbit"></span></span>
+          <span class="brand-title">GUSTAVO <strong>MADEIRA</strong><small>PLANETARY SCIENTIST</small></span>
+        </a>
+        <button aria-controls="site-menu" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav aria-label="Main navigation" class="site-nav" id="site-menu">
+          <a{% if include.active == "home" %} aria-current="page" class="is-active"{% endif %} href="index.html">Home</a>
+          <a{% if include.active == "about" %} aria-current="page" class="is-active"{% endif %} href="about.html">About</a>
+          <a{% if include.active == "cv" %} aria-current="page" class="is-active"{% endif %} href="cv.html">CV</a>
+          <a{% if include.active == "research" %} aria-current="page" class="is-active"{% endif %} href="research.html">Research</a>
+          <a{% if include.active == "publications" %} aria-current="page" class="is-active"{% endif %} href="publications.html">Publications</a>
+          <a{% if include.active == "teaching" %} aria-current="page" class="is-active"{% endif %} href="teaching.html">Teaching</a>
+          <a{% if include.active == "media" %} aria-current="page" class="is-active"{% endif %} href="media.html">Media</a>
+        </nav>
+      </div>
+    </header>

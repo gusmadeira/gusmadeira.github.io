@@ -22,9 +22,9 @@ img,video{display:block;max-width:100%;height:auto} a{color:inherit;text-decorat
 .brand{display:flex;align-items:center;gap:13px;flex-shrink:0;color:white}
 .brand-icon{position:relative;display:grid;place-items:center;width:49px;height:49px;background:linear-gradient(145deg,#183d55,#061d31);border:1px solid rgba(229,214,181,.46);border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.2);font-size:20px;font-weight:700;letter-spacing:-3px;padding-right:3px;overflow:hidden}
 .brand-orbit{position:absolute;width:46px;height:27px;transform:rotate(-32deg);border:1px solid rgba(214,194,148,.45);border-radius:50%;pointer-events:none}
-.brand-title{font-size:12px;font-weight:500;letter-spacing:.175em;line-height:1.4;white-space:nowrap}.brand-title strong{color:var(--gold-light);font-weight:700}.brand-title small{display:block;letter-spacing:.23em;color:#a7b4be;font-size:8px;margin-top:4px}
+.brand-title{font-size:15px;font-weight:500;letter-spacing:.175em;line-height:1.4;white-space:nowrap}.brand-title strong{color:var(--gold-light);font-weight:700}.brand-title small{display:block;letter-spacing:.23em;color:#a7b4be;font-size:10px;margin-top:4px}
 .site-nav{display:flex;align-items:center;gap:clamp(7px,1.5vw,24px)}
-.site-nav a{font-size:12px;letter-spacing:.04em;font-weight:600;color:#d3dce2;white-space:nowrap;padding:13px 0;transition:color .2s}
+.site-nav a{font-size:14px;letter-spacing:.04em;font-weight:600;color:#d3dce2;white-space:nowrap;padding:13px 0;transition:color .2s}
 .site-nav a:hover,.site-nav a.is-active{color:var(--gold-light)}
 .site-nav a.is-active::after{content:'';display:block;width:100%;height:1px;background:var(--gold);margin-top:3px}
 .menu-toggle{display:none;z-index:80;border:1px solid rgba(255,255,255,.23);background:transparent;padding:11px;cursor:pointer;color:white}
@@ -192,7 +192,7 @@ img,video{display:block;max-width:100%;height:auto} a{color:inherit;text-decorat
 .footer-links a{font-size:12px;color:#e1e7e9;font-weight:600}.footer-links a:hover{color:var(--gold-light)}.footer-links span{color:var(--gold);font-size:13px}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;gap:20px;padding:22px 0;color:#8da0ad;font-size:11px;letter-spacing:.015em}
 @media (max-width:1120px){
- .nav-shell{min-height:78px}.site-nav{gap:12px}.site-nav a{font-size:11px}.brand-title{font-size:11px}.brand-icon{width:42px;height:42px}
+ .nav-shell{min-height:78px}.site-nav{gap:12px}.site-nav a{font-size:13px}.brand-title{font-size:14px}.brand-icon{width:42px;height:42px}
  .hero-heading{font-size:clamp(54px,6.9vw,84px)}.about-layout{grid-template-columns:300px 1fr}.research-tile{grid-template-columns:40% 60%}.research-tile-copy{padding:20px}
 }
 @media(max-width:900px){
@@ -225,7 +225,7 @@ img,video{display:block;max-width:100%;height:auto} a{color:inherit;text-decorat
  .media-item{grid-template-columns:80px 1fr 16px;gap:11px}.media-source{font-size:10px}.media-headline{font-size:13px}
  .footer-top{grid-template-columns:1fr;gap:26px}.footer-links{justify-content:start;padding:0}.footer-bottom{flex-direction:column;gap:4px}.site-footer{padding-top:47px}
 }
-@media(max-width:380px){.brand-title{font-size:9px;letter-spacing:.1em}.brand-title small{font-size:7px}.brand-icon{width:40px;height:40px}.site-nav{padding-inline:18px}.research-tile{grid-template-columns:1fr}.research-tile-image{height:145px;min-height:0}.research-tile-copy{padding:22px}.hero-heading{font-size:49px}}
+@media(max-width:380px){.brand-title{font-size:12px;letter-spacing:.1em}.brand-title small{font-size:8px}.brand-icon{width:40px;height:40px}.site-nav{padding-inline:18px}.research-tile{grid-template-columns:1fr}.research-tile-image{height:145px;min-height:0}.research-tile-copy{padding:22px}.hero-heading{font-size:49px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 /* Ensure artwork fills cards with intrinsic minimum height on narrow screens. */
 .focus-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
