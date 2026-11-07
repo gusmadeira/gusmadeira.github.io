@@ -1,17 +1,236 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>People &amp; Students</title>
-<meta content="Students and researchers involved in projects under my supervision." name="description"/>
-<meta content="#08243d" name="theme-color"/><meta content="light" name="color-scheme"/>
-<meta content="website" property="og:type"/><meta content="Gustavo Madeira" property="og:site_name"/><meta content="People &amp; Students | Gustavo Madeira" property="og:title"/><meta content="Students and researchers involved in projects under my supervision." property="og:description"/><meta content="https://gusmadeira.github.io/assets/og-cover.jpg" property="og:image"/>
-<link href="https://gusmadeira.github.io/people.html" rel="canonical"/>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/><link href="assets/favicon-32.png" rel="alternate icon" type="image/png"/><link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
-<script defer="" src="assets/site.js"></script>
-</head><body><a class="skip-link" href="#main">Skip to content</a>
-<div data-site-header></div><main id="main"><section aria-labelledby="page-heading" class="page-hero"><div class="container page-hero-content"><p class="eyebrow light-eyebrow">RESEARCH / PEOPLE</p><h1 class="display" id="page-heading">People</h1><p class="page-summary">Students and researchers involved in projects under my supervision.</p></div><div aria-hidden="true" class="page-orbit"><i></i><i></i><i></i></div></section><section class="section-space"><div class="container"><div class="section-heading"><div><p class="eyebrow dark-eyebrow">STUDENTS AND RESEARCHERS</p><h2 class="display">Supervised projects</h2></div><a class="text-link" href="https://godsastronomy.github.io/gods/people.html" rel="noopener noreferrer" target="_blank">GODS research group <span aria-hidden="true">↗</span></a></div><div class="people-grid"><article class="person-card"><div class="person-image"><img alt="Portrait of Dr. Bruno Chagas" loading="lazy" src="students/bruno.jpeg"/></div><div class="person-detail"><span>Postdoctoral Fellow</span><h3>Dr. Bruno Chagas</h3><p>Deflection mechanisms for NEOs on a collision course with Earth</p><small>2025-</small></div></article><article class="person-card"><div class="person-image"><img alt="Portrait of M.Sc. Paulo Soares" loading="lazy" src="students/paulo.jpeg"/></div><div class="person-detail"><span>PhD Candidate (co-advisor)</span><h3>M.Sc. Paulo Soares</h3><p>Particle dynamics around asymmetrical bodies</p><small>2023-</small></div></article><article class="person-card"><div class="person-image"><img alt="Portrait of Antônio Dácio" loading="lazy" src="students/antonio.jpg"/></div><div class="person-detail"><span>Undergraduate Student</span><h3>Antônio Dácio</h3><p>Transit of particles between corotation sites</p><small>2025-</small></div></article><article class="person-card"><div class="person-image"><img alt="Portrait of César Toto" loading="lazy" src="students/cesar.jpg"/></div><div class="person-detail"><span>Undergraduate Student</span><h3>César Toto</h3><p>Impact modeling in Rebound code</p><small>2025-</small></div></article><article class="person-card"><div class="person-image"><img alt="Portrait of Laura Araújo" loading="lazy" src="students/laura.jpg"/></div><div class="person-detail"><span>Undergraduate Student</span><h3>Laura Araújo</h3><p>Wisdom gap for non-spherical objects</p><small>2026-</small></div></article></div></div></section></main><div data-site-footer></div></body></html>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>People &amp; Students</title>
+  <meta content="Students and researchers involved in projects under my supervision." name="description"/>
+  <meta content="#08243d" name="theme-color"/>
+  <meta content="light" name="color-scheme"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Gustavo Madeira" property="og:site_name"/>
+  <meta content="People &amp; Students | Gustavo Madeira" property="og:title"/>
+  <meta content="Students and researchers involved in projects under my supervision." property="og:description"/>
+  <meta content="https://gusmadeira.github.io/assets/og-cover.jpg" property="og:image"/>
+  <link href="https://gusmadeira.github.io/people.html" rel="canonical"/>
+  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="assets/favicon-32.png" rel="alternate icon" type="image/png"/>
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+  <script defer="" src="assets/site.js"></script>
+
+  <!-- Estilos exclusivos das abas Current / Alumni. -->
+  <style>
+    .people-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      border-bottom: 1px solid #dce2e5;
+      margin-bottom: 32px;
+    }
+
+    .people-tab {
+      position: relative;
+      appearance: none;
+      padding: 0 0 16px;
+      border: 0;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -1px;
+      background: transparent;
+      color: #74818b;
+      font: 600 16px/1.4 "DM Sans", sans-serif;
+      cursor: pointer;
+    }
+
+    .people-tab[aria-selected="true"] {
+      color: #08243d;
+      border-bottom-color: #ad8739;
+    }
+
+    .people-tab:hover {
+      color: #08243d;
+    }
+
+    .people-tab:focus-visible {
+      outline: 2px solid #ad8739;
+      outline-offset: 4px;
+    }
+
+    .people-grid[hidden] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main">
+    <section aria-labelledby="page-heading" class="page-hero">
+      <div class="container page-hero-content">
+        <h1 class="display" id="page-heading">People</h1>
+      </div>
+      <div aria-hidden="true" class="page-orbit"><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark-eyebrow">STUDENTS AND RESEARCHERS</p>
+            <h2 class="display">Supervised projects</h2>
+          </div>
+          <a class="text-link" href="https://godsastronomy.github.io/gods/people.html" rel="noopener noreferrer" target="_blank">
+            GODS research group <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <!-- Abas para orientandos atuais e antigos. -->
+        <div class="people-tabs" role="tablist" aria-label="Supervision status">
+          <button class="people-tab" type="button" id="tab-current" role="tab"
+                  aria-controls="panel-current" aria-selected="true" tabindex="0">Current</button>
+          <button class="people-tab" type="button" id="tab-alumni" role="tab"
+                  aria-controls="panel-alumni" aria-selected="false" tabindex="-1">Alumni</button>
+        </div>
+
+        <!-- CURRENT -->
+          
+
+        <div class="people-grid" id="panel-current" role="tabpanel" aria-labelledby="tab-current" tabindex="0">
+          <article class="person-card">
+            <div class="person-image">
+              <img alt="Portrait of Petronio" loading="lazy" src="students/Petroni.png"/>
+            </div>
+            <div class="person-detail">
+              <span>PhD Candidate</span>
+              <h3>Petrônio de Oliveira Silva</h3>
+              <p>Meteor Monitoring and Orbital Determination</p>
+              <small>2026-</small>
+            </div>
+          </article>
+            
+            <article class="person-card">
+            <div class="person-image">
+              <img alt="Portrait of M.Sc. Paulo Soares" loading="lazy" src="students/paulo.jpeg"/>
+            </div>
+            <div class="person-detail">
+              <span>PhD Candidate (co-advisor)</span>
+              <h3>M. Sc. Paulo Soares</h3>
+              <p>Dynamic analysis of the Dinkinesh system</p>
+              <small>2025-</small>
+            </div>
+          </article>
+            
+            <article class="person-card">
+            <div class="person-image">
+              <img alt="Portrait of Victor" loading="lazy" src="students/avatar.png"/>
+            </div>
+            <div class="person-detail">
+              <span>Master Student (co-advisor)</span>
+              <h3>Victor de Luca Simões</h3>
+              <p>Physicochemical Properties of Quaoar rings</p>
+              <small>2026-</small>
+            </div>
+          </article>
+
+          <article class="person-card">
+            <div class="person-image">
+              <img alt="Portrait of Antônio Dácio" loading="lazy" src="students/antonio.jpg"/>
+            </div>
+            <div class="person-detail">
+              <span>Undergraduate Student</span>
+              <h3>Antônio Dácio</h3>
+              <p>Dynamics of the Aegaeon arc</p>
+              <small>2025-</small>
+            </div>
+          </article>
+
+          <article class="person-card">
+            <div class="person-image">
+              <img alt="Portrait of César Toto" loading="lazy" src="students/cesar.jpeg"/>
+            </div>
+            <div class="person-detail">
+              <span>Undergraduate Student</span>
+              <h3>César Totô</h3>
+              <p>Impact modeling in planetary rings</p>
+              <small>2025-</small>
+            </div>
+          </article>
+
+          <article class="person-card">
+            <div class="person-image">
+              <img alt="Portrait of Laura Araújo" loading="lazy" src="students/laura.jpg"/>
+            </div>
+            <div class="person-detail">
+              <span>Undergraduate Student</span>
+              <h3>Laura Araújo</h3>
+              <p>Wisdom gap for non-spherical objects</p>
+              <small>2026-</small>
+            </div>
+          </article>
+        </div>
+
+        <!-- ALUMNI -->
+        <div class="people-grid" id="panel-alumni" role="tabpanel" aria-labelledby="tab-alumni" tabindex="0" hidden>
+          <article class="person-card">
+            <div class="person-image">
+              <img alt="Portrait of Dr. Bruno Chagas" loading="lazy" src="students/bruno.jpeg"/>
+            </div>
+            <div class="person-detail">
+              <span>Former Postdoctoral Fellow</span>
+              <h3>Dr. Bruno Chagas</h3>
+              <p>Deflection mechanisms for NEOs on a collision course with Earth</p>
+            </div>
+          </article>
+
+          <article class="person-card">
+            <div class="person-image">
+              <img alt="Portrait of M.Sc. Paulo Soares" loading="lazy" src="students/paulo.jpeg"/>
+            </div>
+            <div class="person-detail">
+              <span>Former Master's Student (co-advisor)</span>
+              <h3>M.Sc. Paulo Soares</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <!-- Alterna as abas sem alterar o JavaScript compartilhado do site. -->
+  <script>
+    (() => {
+      const tabs = Array.from(document.querySelectorAll('.people-tab'));
+
+      function activateTab(tab, moveFocus = false) {
+        tabs.forEach((item) => {
+          const selected = item === tab;
+          item.setAttribute('aria-selected', String(selected));
+          item.tabIndex = selected ? 0 : -1;
+          document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+        });
+        if (moveFocus) tab.focus();
+      }
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activateTab(tab));
+        tab.addEventListener('keydown', (event) => {
+          let nextIndex;
+          if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+          else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+          else if (event.key === 'Home') nextIndex = 0;
+          else if (event.key === 'End') nextIndex = tabs.length - 1;
+          else return;
+          event.preventDefault();
+          activateTab(tabs[nextIndex], true);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
